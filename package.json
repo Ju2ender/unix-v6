@@ -1,0 +1,18 @@
+{
+  "name": "js-x",
+  "version": "0.0.1",
+  "description": "A power no one knows.",
+  "keywords": [ "functional", "util" ],
+  "license": "GPLv3",
+  "author": "Ju2ender <ju2ender@gmail.com>",
+  "main": "src/x.js",
+  "homepage": "https://github.com/Ju2ender/js-x",
+  "bugs": "https://github.com/Ju2ender/js-x/issues",
+  "repository": {
+      "type": "git",
+      "url": "git://github.com/Ju2ender/js-x.git"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  }
+}

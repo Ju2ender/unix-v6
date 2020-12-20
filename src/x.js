@@ -4,15 +4,10 @@ import NumberPrimer from "./number_primer";
 import TypePrimer from "./type_primer";
 import Valid from "./valid";
 
-class x
-{
-    constructor() {}
-
-    static DatePrimer = DatePrimer;
-    static Func = Func;
-    static NumberPrimer = NumberPrimer;
-    static TypePrimer = TypePrimer;
-    static Valid = Valid;
-}
-
-export default x;
+export {
+    DatePrimer,
+    Func,
+    NumberPrimer,
+    TypePrimer,
+    Valid
+};

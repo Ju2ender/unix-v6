@@ -1,10 +1,12 @@
 {
   "name": "@ju2ender/js-x",
-  "version": "0.0.6",
-  "description": "A power no one knows.",
+  "version": "0.0.8",
+  "description": "There is a fire in your soul. A power no one knows.",
   "keywords": [
     "functional",
-    "util"
+    "util",
+    "date",
+    "time"
   ],
   "license": "MIT",
   "author": "Ju2ender <ju2ender@gmail.com>",

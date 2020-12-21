@@ -14,39 +14,40 @@ class NumberPrimer
             return defaultValue;
         }
 
+        if (TypePrimer.isString(num)) {
+            num = parseFloat(num);
+        }
+
         return num;
     }
 
     /**
      * Turn numbers into prices.
+     * https://stackoverflow.com/a/14428340
      * 
-     * @param num
-     * @param fixed
+     * @param num The number to be turn
+     * @param fixed Number of significant digits
+     * @param defaultValue
      */
-    static toPrice(num, fixed) {
+    static toPrice(num, fixed, defaultValue) {
         if (Func.isNull(fixed)) {
             fixed = 2;
         }
 
-        num = this.fix(num);
+        num = this.fix(num, defaultValue);
 
-        if (TypePrimer.isString(num)) {
-            return this.toPrice(parseFloat(num));
-        }
-
-        return num.toFixed(fixed).replace(/\d(?=(\d{3})+\.)/g, '$&,');
+        return num.toFixed(fixed)
+            .replace(/\d(?=(\d{3})+\.)/g, '$&,');
     }
 
-    static toPercent(num, exp) {
+    static toPercent(num, exp, defaultValue) {
         if (Func.isNull(exp)) {
             exp = 2;
         }
 
-        if (TypePrimer.isString(num)) {
-            num = parseFloat(num);
-        }
-
+        npm = this.fix(num, defaultValue);
         var percent = num * Math.pow(10, exp);
+
         return percent + "%";
     }
 }

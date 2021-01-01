@@ -6,6 +6,7 @@ import NumberPrimer from "./number_primer";
 import StringPrimer from "./string_primer";
 import TypePrimer from "./type_primer";
 import Valid from "./valid";
+import WebPrimer from "./web_primer";
 
 export {
     DatePrimer,
@@ -15,5 +16,6 @@ export {
     NumberPrimer,
     StringPrimer,
     TypePrimer,
-    Valid
+    Valid,
+    WebPrimer
 };

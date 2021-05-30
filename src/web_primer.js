@@ -32,6 +32,8 @@ class WebPrimer
         }).catch(err => {
             if (typeof error !== "undefined") {
                 error(err);
+            } else {
+                console.error(err);
             }
         });
     }
@@ -46,6 +48,8 @@ class WebPrimer
         }).catch(err => {
             if (typeof error !== "undefined") {
                 error(err);
+            } else {
+                console.error(err);
             }
         });
     }

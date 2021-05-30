@@ -20,7 +20,7 @@ class WebPrimer
         return pairs[1];
     }
 
-    static get(url, data, success) {
+    static get(url, data, success, error) {
         axios.get(
             url, {
                 params: data
@@ -30,11 +30,15 @@ class WebPrimer
                 success(res.data);
             }
         }).catch(err => {
-            console.error(err);
+            if (typeof error !== "undefined") {
+                error(err);
+            } else {
+                console.error(err);
+            }
         });
     }
 
-    static post(url, data, success) {
+    static post(url, data, success, error) {
         axios.post(
             url, data
         ).then(res => {
@@ -42,7 +46,11 @@ class WebPrimer
                 success(res.data);
             }
         }).catch(err => {
-            console.error(err);
+            if (typeof error !== "undefined") {
+                error(err);
+            } else {
+                console.error(err);
+            }
         });
     }
 }

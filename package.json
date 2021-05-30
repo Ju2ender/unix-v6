@@ -1,6 +1,6 @@
 {
   "name": "@ju2ender/js-x",
-  "version": "0.0.9",
+  "version": "0.0.10",
   "description": "There is a fire in your soul. A power no one knows.",
   "keywords": [
     "functional",
@@ -22,6 +22,7 @@
     "build": ""
   },
   "dependencies": {
+    "axios": "^0.21.1",
     "dayjs": "^1.9.7"
   },
   "devDependencies": {

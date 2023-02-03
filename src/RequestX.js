@@ -1,7 +1,7 @@
 import Func from "./func";
 import axios from "axios";
 
-class WebPrimer
+class RequestX
 {
     constructor() {}
 
@@ -38,6 +38,18 @@ class WebPrimer
         });
     }
 
+    // 从指定地址获取内容并返给回调
+    static getFile(uri, callback) {
+        var xhr = new XMLHttpRequest();
+        xhr.open("GET", uri, true);
+
+        xhr.onload = function (e) {
+            callback(e.currentTarget.response);
+        };
+
+        xhr.send(null);
+    }
+
     static post(url, data, success, error) {
         axios.post(
             url, data
@@ -55,4 +67,4 @@ class WebPrimer
     }
 }
 
-export default WebPrimer;
+export default RequestX;

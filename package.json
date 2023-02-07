@@ -10,7 +10,7 @@
   ],
   "license": "MIT",
   "author": "Ju2ender <ju2ender@gmail.com>",
-  "main": "src/x.js",
+  "main": "dist/x.min.js",
   "homepage": "https://github.com/Ju2ender/js-x",
   "bugs": "https://github.com/Ju2ender/js-x/issues",
   "repository": {

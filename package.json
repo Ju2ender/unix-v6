@@ -1,8 +1,13 @@
 {
   "name": "@ju2ender/js-x",
-  "version": "0.0.15",
+  "version": "0.0.16",
   "description": "There is a fire in your soul. A power no one knows.",
-  "keywords": [ "functional", "util", "date", "time" ],
+  "keywords": [
+    "functional",
+    "util",
+    "date",
+    "time"
+  ],
   "license": "MIT",
   "author": "Ju2ender <ju2ender@gmail.com>",
   "main": "src/x.js",
@@ -21,6 +26,7 @@
     "dayjs": "^1.9.7"
   },
   "devDependencies": {
+    "minify": "^9.2.0",
     "rollup": "^2.35.1"
   }
 }

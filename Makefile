@@ -8,7 +8,7 @@ init:
 
 # 0x01: 打包为 client js
 build:
-	npx rollup src/x.js -o dist/x.js -f cjs
+	npx rollup src/x.js -o dist/x.js -f amd
 	npx minify dist/x.js > dist/x.min.js
 
 # 0x02: 将项目发布到 npmjs.org

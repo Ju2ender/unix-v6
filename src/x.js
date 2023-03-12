@@ -12,10 +12,10 @@ export {
     DatePrimer,
     FormPrimer,
     Func,
-    ListX,
     NumberPrimer,
     StringPrimer,
     TypePrimer,
     Valid,
-    RequestX
+    RequestX,
+    ListX
 };

@@ -124,6 +124,22 @@ define(['exports', 'dayjs', 'axios'], function (exports, dayjs, axios) { 'use st
         }
     }
 
+    class ListX
+    {
+        constructor() {}
+
+        // 从 list 中找是否存在 str
+        static contain(str, list) {
+            for (var x in list) {
+                if (str.indexOf(list[x]) === 0) {
+                    return true;
+                }
+            }
+        
+            return false;
+        }
+    }
+
     class NumberPrimer
     {
         constructor() {}
@@ -304,6 +320,7 @@ define(['exports', 'dayjs', 'axios'], function (exports, dayjs, axios) { 'use st
     exports.DatePrimer = DatePrimer;
     exports.FormPrimer = FormPrimer;
     exports.Func = Func;
+    exports.ListX = ListX;
     exports.NumberPrimer = NumberPrimer;
     exports.RequestX = RequestX;
     exports.StringPrimer = StringPrimer;

@@ -128,10 +128,10 @@ define(['exports', 'dayjs', 'axios'], function (exports, dayjs, axios) { 'use st
     {
         constructor() {}
 
-        // 从 list 中找是否存在 str
-        static contain(str, list) {
-            for (var x in list) {
-                if (str.indexOf(list[x]) === 0) {
+        // 检查 str 中是否出现过 list 中的各项子字符串
+        static matchSubStr(str, matchList) {
+            for (var i in matchList) {
+                if (str.indexOf(matchList[i]) === 0) {
                     return true;
                 }
             }

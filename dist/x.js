@@ -138,6 +138,17 @@ define(['exports', 'dayjs', 'axios'], function (exports, dayjs, axios) { 'use st
         
             return false;
         }
+
+        /**
+         * 根据某属性的值寻找某成员
+         * @param list 数组
+         * @param propertyName 目标属性名
+         * @param propertyValue 目标属性值
+         */
+        static findByAttr(list, propertyName, propertyValue) {
+            // https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/find
+            return list.find(x => x[propertyName] == propertyValue);
+        }
     }
 
     class NumberPrimer

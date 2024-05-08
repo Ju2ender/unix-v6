@@ -4,7 +4,7 @@ import Func from "./func";
 import ListX from "./ListX";
 import NumberPrimer from "./number_primer";
 import RequestX from "./RequestX";
-import StringPrimer from "./string_primer";
+import StringX from "./StringX";
 import TypePrimer from "./type_primer";
 import Valid from "./valid";
 
@@ -15,7 +15,7 @@ export {
     ListX,
     NumberPrimer,
     RequestX,
-    StringPrimer,
+    StringX,
     TypePrimer,
     Valid
 };

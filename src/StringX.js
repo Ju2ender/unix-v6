@@ -1,6 +1,6 @@
 import Func from "./func";
 
-class StringPrimer
+class StringX
 {
     constructor() {}
 
@@ -26,6 +26,16 @@ class StringPrimer
         }
 
         return str.substring(0, max) + suffix;
+    }
+
+    /**
+     * 补齐2位数，不足补0
+     * @param str 月份、小时或分钟
+     * @param max 位数
+     */
+    static pad(str, max) {
+        str = str.toString();
+        return str.length < max ? pad("0" + str, max) : str;
     }
 }
 
